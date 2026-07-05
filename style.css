@@ -1,0 +1,247 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+  --coffee-dark:#6d331c;
+  --coffee:#6f4e37;
+  --coffee-light:#c78f67;
+  --cream:#f8f1e7;
+  --accent:#d98324;
+}
+
+body{
+  font-family:'Poppins', sans-serif;
+  color:#77371e;
+  background:var(--cream);
+}
+h1,h2,h3,h4,.font-display{
+  font-family:'Playfair Display', serif;
+  font-weight:700;
+}
+
+a{ color:var(--accent); }
+a:hover{ color:var(--coffee-dark); }
+
+/* ---------- Navbar ---------- */
+.navbar-coffee{
+  background:var(--coffee-dark);
+}
+.navbar-coffee .navbar-brand{
+  font-family:'Playfair Display', serif;
+  font-weight:700;
+  color:#f8f1e7 !important;
+  font-size:1.4rem;
+}
+.navbar-coffee .nav-link{
+  color:#e8d9c5 !important;
+  font-weight:500;
+}
+.navbar-coffee .nav-link.active,
+.navbar-coffee .nav-link:hover{
+  color:#f0e8e8 !important;
+}
+
+/* ---------- Tombol ---------- */
+.btn-coffee{
+  background:var(--accent);
+  border-color:var(--accent);
+  color:#fff;
+  font-weight:600;
+}
+.btn-coffee:hover{
+  background:#b9690f;
+  border-color:#b9690f;
+  color:#fff;
+}
+.btn-outline-coffee{
+  border:2px solid #fff;
+  color:#fff;
+  font-weight:600;
+}
+.btn-outline-coffee:hover{
+  background:#fff;
+  color:var(--coffee-dark);
+}
+
+/* ---------- Hero ---------- */
+.hero{
+  background:linear-gradient(rgba(35,20,14,.72), rgba(35,20,14,.72)),
+             url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=70') center/cover no-repeat;
+  color:#fff;
+  padding:6rem 0;
+}
+.page-banner{
+  background:linear-gradient(rgba(35,20,14,.78), rgba(35,20,14,.78)),
+             url('https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=1600&q=70') center/cover no-repeat;
+  color:#fff;
+  padding:4rem 0;
+}
+
+/* ---------- Section umum ---------- */
+.section{ padding:4rem 0; }
+.section-title{
+  text-align:center;
+  margin-bottom:3rem;
+}
+.section-title p{
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  font-size:.8rem;
+  color:var(--accent);
+  font-weight:700;
+}
+.bg-coffee{ background:var(--coffee-dark); color:#f1e6d8; }
+.bg-cream-soft{ background:#fffaf2; }
+
+/* ---------- Kartu produk / fitur ---------- */
+.card-coffee{
+  border:none;
+  border-radius:.8rem;
+  overflow:hidden;
+  box-shadow:0 8px 24px rgba(59,34,24,.12);
+  transition:transform .3s ease, box-shadow .3s ease;
+  height:100%;
+}
+.card-coffee:hover{
+  transform:translateY(-6px);
+  box-shadow:0 16px 32px rgba(59,34,24,.18);
+}
+.card-coffee img{
+  height:210px;
+  object-fit:cover;
+}
+.card-coffee .price{
+  font-weight:700;
+  color:var(--coffee-dark);
+}
+.badge-origin{
+  background:var(--coffee-light);
+  color:#fff;
+  font-weight:500;
+}
+
+.icon-circle{
+  width:64px; height:64px;
+  border-radius:50%;
+  background:var(--cream);
+  color:var(--accent);
+  display:flex; align-items:center; justify-content:center;
+  font-size:1.6rem;
+  margin:0 auto 1rem;
+}
+
+/* ---------- Tabel ---------- */
+.table-coffee thead{
+  background:var(--coffee-dark);
+  color:#fff;
+}
+
+/* ---------- Galeri ---------- */
+.gallery-item{
+  border-radius:.6rem;
+  overflow:hidden;
+  cursor:pointer;
+  position:relative;
+}
+.gallery-item img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  transition:transform .4s ease;
+}
+.gallery-item:hover img{
+  transform:scale(1.08);
+}
+
+/* ---------- Footer ---------- */
+footer{
+  background:var(--coffee-dark);
+  color:#cbb9a8;
+}
+footer a{ color:#e8d9c5; }
+footer a:hover{ color:#fff; }
+footer h6{
+  color:#fff;
+  text-transform:uppercase;
+  font-size:.8rem;
+  letter-spacing:.08em;
+}
+
+/* ---------- Tombol kembali ke atas ---------- */
+#backToTop{
+  position:fixed;
+  right:1.2rem;
+  bottom:1.2rem;
+  display:none;
+  z-index:99;
+}
+
+/* ---------- Form kontak ---------- */
+.form-label{
+  font-weight:600;
+  color:#3b2218;
+  font-size:.9rem;
+  margin-bottom:.4rem;
+}
+
+.form-control,
+.form-select{
+  border-color:#ddd;
+  border-radius:.4rem;
+  padding:.65rem .8rem;
+}
+
+.form-control:focus, 
+.form-select:focus{
+  border-color:var(--accent);
+  box-shadow:0 0 0 .2rem rgba(217,131,36,.2);
+}
+
+.contact-info-box{
+  background:#f8f1e7;
+  border-left:4px solid var(--accent);
+  padding:1.2rem;
+  border-radius:.4rem;
+  margin-bottom:1rem;
+}
+
+.contact-info-box strong{
+  display:block;
+  color:var(--coffee-dark);
+  margin-bottom:.3rem;
+}
+
+.contact-info-box a{
+  color:var(--accent);
+  text-decoration:none;
+}
+
+.contact-info-box a:hover{
+  text-decoration:underline;
+}
+
+.btn-submit{
+  background:var(--accent);
+  border-color:var(--accent);
+  color:#fff;
+  font-weight:600;
+  padding:.7rem 2rem;
+  border-radius:.4rem;
+}
+
+.btn-submit:hover{
+  background:#b9690f;
+  border-color:#b9690f;
+}
+
+/* ---------- Video ---------- */
+.ratio-coffee video{ border-radius:.8rem; }
+
+/* ---------- Pesan validasi ---------- */
+.invalid-feedback{ display:none; color:#dc3545; font-size:.8rem; margin-top:.2rem; }
+.valid-feedback{ display:none; color:#198754; font-size:.8rem; margin-top:.2rem; }
+.was-validated .form-control:invalid,
+.was-validated .form-select:invalid{ border-color:#dc3545; }
+.was-validated .form-control:valid ~ .valid-feedback{ display:block; }
+.was-validated .form-control:invalid ~ .invalid-feedback,
+.was-validated .form-select:invalid ~ .invalid-feedback{ display:block; }
